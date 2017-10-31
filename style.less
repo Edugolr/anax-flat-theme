@@ -1,32 +1,38 @@
-/**
-* Anax Flat theme.
-*/
+//Anax-Flat Theme
 @import url(modules.less);
 
 
-/** --------------------------------------------------------------
- * Header
- */
+//Header
  .site-header {
      height: 80px;
  }
-.site-logo-text,
-.navbar2 {
-    float: left;
-    width: 33%;
-}
-.site-logo-text {
 
-    font-size: 2em;
-    a {
-        text-decoration: none;
-        color: #cccc;
-    }
+ .site-logo-text,
+ .navbar2 {
+     float: left;
+     width: 33%;
+ }
+ .site-logo-text {
 
+     font-size: 2em;
+     a {
+         text-decoration: none;
+         color: #111;
+     }
+
+ }
+
+//Links
+a {
+    text-decoration: none;
+    color: #111;
 }
-/** --------------------------------------------------------------
- *  Logo images
- */
+.selected {
+    text-decoration: none;
+    color: #00c200;
+}
+
+//Logo Images
 .logo-1 {
     position: absolute;
     top: 70px;
@@ -38,12 +44,11 @@
         vertical-align: bottom;
     }
 }
-img {
+.flash-wrap img {
     max-width: 100%;
 }
 
 // Responsive design
-
 @media screen and (max-width: 900px) {
     .site-logo-text {
         width: 40%;
@@ -60,7 +65,7 @@ img {
 
 @media screen and (max-width: 750px) {
     .sidebar {
-        display: none;
+        width: 100%;
     }
 }
 
