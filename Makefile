@@ -168,7 +168,7 @@ npm-version:
 .PHONY: upgrade
 upgrade: upgrade-normalize upgrade-responsive-menu
 	@$(call HELPTEXT,$@)
-	
+
 # target: upgrade-normalize - Upgrade LESS module - Normalize.
 .PHONY: upgrade-normalize
 upgrade-normalize:

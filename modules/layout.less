@@ -1,0 +1,70 @@
+@import "grid-float.less";
+@import "grid-helpers.less";
+
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       24;
+
+.site-logo-text {
+    .column(5);
+}
+
+.navbar-2 {
+    .column(9);
+}
+
+.route-grid {
+    @gridImage: "../img/grid950x24x30x10-nomargin.png";
+    @gridWidth: 1024px;
+    .showGrid(@gridWidth, @gridImage);
+}
+.inner-wrap {
+    @gridWidth: 1024px;
+    .container(@gridWidth);
+    .inner-wrap-footer,
+    &.inner-wrap-header {
+        @gridWidth: 100%;
+        .container(@gridWidth);
+    }
+}
+
+.outer-wrap-header,
+.footer-column-wrapper,
+.outer-wrap-main {
+    margin-bottom: 24px;
+}
+
+.footer-column-wrapper {
+    .clearfix();
+}
+
+.row {
+    .row();
+}
+
+.main, {
+    @push: 3;
+    .column(@columns - 2*@push);
+    .push(@push);
+}
+
+.content {
+    .column(@columns/3);
+}
+
+.footer-column {
+    .column(@columns / 3);
+}
+
+.site-footer {
+    .column(@columns);
+    text-align: center;
+}
+.outer-wrap-footer {
+    background-color: black;
+    opacity: 0.4;
+    color: white;
+    a {
+        color: white;
+    }
+}
