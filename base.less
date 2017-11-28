@@ -1,0 +1,75 @@
+//Anax-Flat Theme
+@import url(modules.less);
+// This is part of all themes, the base
+
+
+@magicNumber: 24px;
+
+h1,
+p {
+    margin-bottom: @magicNumber;
+}
+
+.sidebar-left {
+    float: left;
+}
+
+.navbar2 {
+    width: 50%;
+    margin: auto;
+}
+//Links
+
+
+//Logo Images
+.logo-1 {
+    position: absolute;
+    top: 70px;
+    left: -140px;
+}
+
+.site-logo-text-icon {
+    img {
+        vertical-align: bottom;
+    }
+}
+.flash-wrap img {
+    max-width: 100%;
+}
+
+// Responsive design
+@media screen and (max-width: 900px) {
+    .site-logo-text {
+        width: 40%;
+    }
+
+    .navbar2 {
+        display: none;
+    }
+
+    .profile {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .navbar2 {
+        display: none;
+    }
+
+    .site-logo-text {
+        width: 90%;
+    }
+}

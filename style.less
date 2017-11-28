@@ -1,86 +1,47 @@
 //Anax-Flat Theme
-@import url(modules.less);
+@import url(base.less);
+//backgroundcolor
+@back_color: #2E4372;
+@back_color_footer: #152B55;
+@back_colorHeader: inherit;
+@bgMain: inherit;
+//text_color
+@text_color: #000000;
+@headertextColor: @text_color;
+@text_colorFooter: @text_color;
+@linkColor: @text_color;
+@linkColorHeader: @linkColor;
 
+@navbarItemSelectedBgColor: @back_colorHeader;
+@navbarItemHoverBgColor: @back_colorHeader;
+@navbarItemHoverColor: @back_colorHeader;
+@maxButtonFontSize: 2em;
 
-//Header
- .site-header {
-     height: 80px;
- }
- 
- .site-logo-text,
- .navbar2 {
-     float: left;
-     width: 33%;
- }
- .site-logo-text {
+html {
+    color: @text_color;
+    background-color: @back_color;
+}
 
-     font-size: 2em;
-     a {
-         text-decoration: none;
-         color: #111;
-     }
+.inner-wrap-header {
+        background-color: @back_colorHeader;
+        a {
+            color: @linkColorHeader;
+        }
+}
 
- }
+main {
+    background-color: @bgMain;
+}
 
-//Links
+h1, h2, h3, h4, h5, h6 {
+    color: @headertextColor;
+}
+
+.outer-wrap-footer {
+    background-color: @back_color_footer;
+    color: @text_colorFooter;
+}
+
 a {
-    text-decoration: none;
-    color: #111;
-}
-.selected {
-    text-decoration: none;
-    color: #00c200;
-}
-
-//Logo Images
-.logo-1 {
-    position: absolute;
-    top: 70px;
-    left: -140px;
-}
-
-.site-logo-text-icon {
-    img {
-        vertical-align: bottom;
-    }
-}
-.flash-wrap img {
-    max-width: 100%;
-}
-
-// Responsive design
-@media screen and (max-width: 900px) {
-    .site-logo-text {
-        width: 40%;
-    }
-
-    .navbar2 {
-        width: 50%;
-    }
-
-    .profile {
-        width: 10%;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .sidebar {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .footer-column {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    .navbar2 {
-        display: none;
-    }
-
-    .site-logo-text {
-        width: 90%;
-    }
+    color: @linkColor;
 }
