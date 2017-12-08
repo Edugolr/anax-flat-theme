@@ -1,12 +1,13 @@
 //Anax-Flat Theme
 @import url(base.less);
 //backgroundcolor
-@back_color: #2E4372;
-@back_color_footer: #152B55;
+@back_color: inherit;
+@back_color_footer: inherit;
 @back_colorHeader: inherit;
 @bgMain: inherit;
 //text_color
 @text_color: #000000;
+@htextColor: @text_color;
 @headertextColor: @text_color;
 @text_colorFooter: @text_color;
 @linkColor: @text_color;
@@ -15,7 +16,8 @@
 @navbarItemSelectedBgColor: @back_colorHeader;
 @navbarItemHoverBgColor: @back_colorHeader;
 @navbarItemHoverColor: @back_colorHeader;
-@maxButtonFontSize: 2em;
+@maxButtonFontSize: 1.5em;
+
 
 html {
     color: @text_color;
@@ -24,17 +26,18 @@ html {
 
 .inner-wrap-header {
         background-color: @back_colorHeader;
+        color: @headertextColor;
         a {
             color: @linkColorHeader;
         }
 }
 
-main {
+.main {
     background-color: @bgMain;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: @headertextColor;
+    color: @htextColor;
 }
 
 .outer-wrap-footer {

@@ -1,0 +1,101 @@
+
+@import url(style.less);
+
+@text_color: contrast(#c3c3c3);
+
+
+html {
+    background-image: url(../img/pier.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: contrast(@text_color);
+}
+
+.inner-wrap-header a {
+        color: white;
+}
+
+a.rm-button.rm-clicked .rm-button-face-2 {
+    color: red;
+}
+
+.flash-wrap {
+    display: none;
+}
+
+a {
+    color: contrast(@text_color);
+    background-color: @text_color;
+}
+.inner-wrap {
+    background-color: rgba(180, 165, 142, 0);
+}
+
+.rm-max.rm-navbar {
+    top: 2px;
+    font-size: 1.6em;
+}
+
+.logo-1 {
+    display: none;
+}
+
+.site-logo-text-icon {
+    display: none;
+}
+
+.site-logo-text {
+    display: none;
+}
+.navbar2 {
+    width: 93%;
+    height: 40px;
+    position: relative;
+    background: red;
+    line-height: 10px; /* <-- this is what you must define */
+    transition: color 2s;
+}
+.navbar2:hover {
+    color: white;
+}
+.navbar2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px
+    solid white;
+    border-top: 20px
+    solid transparent;
+    border-bottom: 20px
+    solid transparent;
+}
+.navbar2:before {
+    content: ""; position:
+    absolute; right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px
+    solid red;
+    border-top: 20px
+    solid transparent;
+    border-bottom: 20px
+    solid transparent;
+}
+h1,h2,h3,h4,h5,h6,p {
+    background-color: contrast(@text_color);
+}
+.wrap-all h1{
+    border-bottom: 2px solid red;
+}
+
+h1::first-letter {
+    color: red;
+    font-size: @fontSizeH1*0.5;
+    font-weight: bold;
+}

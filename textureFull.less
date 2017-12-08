@@ -1,0 +1,27 @@
+//fullbredd och struktur
+@import url(style.less);
+
+@text_color: #000000;
+@back_colorHeader: #FFFBF1;
+@back_color_footer: #BBB096;
+
+
+html {
+    background-image: url(../img/sand.jpg), url(../img/seagull.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.inner-wrap {
+    max-width: 100%;
+}
+
+.flash-wrap {
+    display: none;
+}
+
+.main {
+    .column(@columns);
+    background-color: #DED6C4;
+}

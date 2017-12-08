@@ -1,0 +1,44 @@
+/*tema skall bygga på bakgrundsfärger med gradients i flera av sidans regioner.
+tema skall använda ett par bilder som placerats ut som designelement på sidan (i bakgrunden).
+tema skall låta innehållet vara centrerat i mitten.*/
+
+@import url(style.less);
+@text_color: contrast(#cb60b3);
+@htextColor: @text_color);
+@headertextColor: contrast(#fceabb);
+@text_colorFooter: @text_color;
+@linkColor: @text_color;
+@linkColorHeader: @headertextColor;
+
+// .wrap-all {
+//     max-width: 50%;
+//     margin: auto;
+//     text-align: center;
+// }
+
+html {
+    text-align: center;
+    background: #cb60b3;
+    background: -moz-radial-gradient(center, ellipse cover,  #cb60b3 0%, #ad1283 50%, #de47ac 100%);
+    background: -webkit-radial-gradient(center, ellipse cover,  #cb60b3 0%,#ad1283 50%,#de47ac 100%);
+    background: radial-gradient(ellipse at center,  #cb60b3 0%,#ad1283 50%,#de47ac 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=1 );
+}
+
+.main {
+    background-image: url(../img/seagull.png);
+    background-repeat: no-repeat;
+}
+
+.site-header {
+    background: #fceabb;
+    background: -moz-radial-gradient(center, ellipse cover,  #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+    background: -webkit-radial-gradient(center, ellipse cover,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
+    background: radial-gradient(ellipse at center,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=1 );
+}
+.outer-wrap-footer {
+    background-color: transparent;
+    background-image: url(../img/clam.png);
+    background-size: cover;
+}

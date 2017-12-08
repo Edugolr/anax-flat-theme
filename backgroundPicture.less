@@ -1,0 +1,45 @@
+//bakgrundsbild borders och opacity
+@import url(style.less);
+
+
+@back_color: transparent;
+@back_color_footer: transparent;
+@text_color: contrast(#604025);
+@navbarItemHoverColor: red;
+@navbarItemSelectedBgColor: red;
+
+h1::first-letter {
+    color: red;
+    font-size: @fontSizeH1 + 0.5;
+    font-weight: bold;
+}
+
+html {
+    background-image: url(../img/sea.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    border: 4px dashed red;
+}
+
+.outer-wrap-footer {
+    border-top: 2px ridge red;
+}
+
+.main {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 4px double red;
+    border-radius: 25px;
+}
+
+.flash-wrap {
+    display: none;
+}
+
+.navbar2 {
+    border: 2px outset red;
+}

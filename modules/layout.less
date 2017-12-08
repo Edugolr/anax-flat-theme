@@ -4,13 +4,13 @@
 @columnWidth:   30;
 @gutterWidth:   10;
 @columns:       24;
-
+@push:           4;
 .site-logo-text {
-    .column(5);
+    .column(1);
 }
 
 .navbar-2 {
-    .column(9);
+    .column(1);
 }
 
 .route-grid {
@@ -42,11 +42,32 @@
     .row();
 }
 
-.main, {
-    @push: 3;
+
+.sidebar-left,
+.sidebar-right {
+    .column(@columns / @push);
+}
+
+.main {
     .column(@columns - 2*@push);
     .push(@push);
+
+    &.has-sidebar-left {
+        .column(((@columns * 3) / @push) - 2);
+        // .push(@push / 2);
+    }
+
+    &.has-sidebar-right {
+        .column(((@columns * 3) / @push) - 2);
+        .push(0);
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+        .column(@columns  / (0.5 *@push));
+        .push(0);
+    }
 }
+
 
 .content {
     .column(@columns/3);
