@@ -15,7 +15,20 @@ tema skall låta innehållet vara centrerat i mitten.*/
 //     margin: auto;
 //     text-align: center;
 // }
+.flash-wrap {
+    display: none;
+}
+.logo-1 {
+    display: none;
+}
 
+.site-logo-text-icon {
+    display: none;
+}
+
+.site-logo-text {
+    display: none;
+}
 html {
     text-align: center;
     background: #cb60b3;
@@ -26,8 +39,10 @@ html {
 }
 
 .main {
-    background-image: url(../img/seagull.png);
-    background-repeat: no-repeat;
+    background-image: url(../img/seagull.png),url(../img/clam.png);
+    background-repeat: no-repeat, repeat-x;
+    background-size: contain, 20% 20%;
+    background-position: top, bottom;
 }
 
 .site-header {
